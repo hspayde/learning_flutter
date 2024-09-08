@@ -124,6 +124,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20)),
+                    onPressed: _incrementCounter,
+                    child: const Icon(Icons.plus_one),
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20)),
                     onPressed: _decrementCounter,
                     child: const Icon(Icons.exposure_minus_1),
                   ),
@@ -133,11 +138,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.plus_one),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

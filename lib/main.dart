@@ -120,6 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Expanded(
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20)),
